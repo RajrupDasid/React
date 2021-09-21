@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import blogs from "./assets/img1.jpg"
+import blogs2 from "./assets/img2.jpg"
+import blogs3 from "./assets/img3.jpg"
+import blogs4 from "./assets/img4.jpg"
+import blogs5 from "./assets/img5.jpg"
+import Hero from './components/Hero';
+import slider from "./components/Slider"
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero imageSrc={blogs3}/>
+      <sldier imageSrc={blogs} title={"Explore with us"} subtitle={"This is a react based blog application"}/>
+      <sldier imageSrc={blogs2} title={"Explore with us"} subtitle={"This is a react based blog application"} flipped={true}/>
     </div>
   );
 }
